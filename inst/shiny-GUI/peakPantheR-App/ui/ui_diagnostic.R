@@ -66,17 +66,17 @@ tabPanel("Diagnostic: update and plots",
             uiOutput("diagPlotControlUI"),
             # plot output
             uiOutput("diagPlotResultUI")
-          )#,    # end tabPanel
+          ),    # end tabPanel
 
         # Show/modify updated parameters - TAB
-        #  tabPanel("Final parameters",
-        #    wellPanel(
-        #      fluidRow(
-        #        h3('! Under construction !')
-        #        # TODO: UI uROI & FIR show and tweaks
-        #      ) # end fluidRow
-        #    )   # end wellPanel
-        #  )     # end tabPanel
+          tabPanel("Final parameters",
+            wellPanel(
+              fluidRow(
+                h3('! Under construction !')
+                # TODO: UI uROI & FIR show and tweaks
+              ) # end fluidRow
+            )   # end wellPanel
+          )     # end tabPanel
         )       # end tabsetPanels
       )   # end Main panel column
     )     # end fluidRow (sidebar + menu)
