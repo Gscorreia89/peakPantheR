@@ -20,7 +20,7 @@ jobs:
           Rscript -e "remotes::install_deps(dependencies = TRUE)"
       - name: System dependencies
         run: |
-          sudo apt-get update && apt-get install libnetcdf-dev netcdf-bin libhdf5-dev
+          sudo apt-get update && apt-get install -y libnetcdf-dev netcdf-bin libhdf5-dev
       - name: Finish test
         if: success()
         run: |
