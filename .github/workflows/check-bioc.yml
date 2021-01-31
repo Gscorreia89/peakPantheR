@@ -23,6 +23,8 @@
 on:
   push:
   pull_request:
+  schedule:
+  - cron: "0 0 1 * *"
 
 name: R-CMD-check-bioc
 
@@ -235,7 +237,8 @@ jobs:
               dir('check', 'tar.gz$', full.names = TRUE),
               `quit-with-status` = TRUE,
               `no-check-R-ver` = TRUE,
-              `no-check-bioc-help` = TRUE
+              `no-check-bioc-help` = TRUE,
+              `no-check-version-num` = TRUE
           )
         shell: Rscript {0}
 
