@@ -1,0 +1,27 @@
+name: peakPantheR Bioc
+
+on:
+  push:
+    branches: ['master', 'develop']
+  pull_request:
+    branches: ['master', 'develop']
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container:
+      image: bioconductor/bioconductor_docker:devel
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@master
+      - name: Install Package Dependencies
+        run: |
+          Rscript -e "BiocManager::install(c('devtools', 'covr', 'faahKO', 'testthat', 'msdata', 'knitr', 'rmarkdown', 'pander', 'BiocStyle'))"
+          Rscript -e "remotes::install_deps(dependencies = TRUE)"
+      - name: System dependencies
+        run: |
+          sudo apt-get update && apt-get install -y libnetcdf-dev netcdf-bin libhdf5-dev
+      - name: Finish test
+        if: success()
+        run: |
+          echo "Test Install Complete" 
