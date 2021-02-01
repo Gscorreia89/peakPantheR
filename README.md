@@ -3,12 +3,9 @@
 # peakPantheR <img src="man/figures/peakPantheR-logo.png" align="right" />
 
 [![R-CMD-check-Bioc](https://github.com/phenomecentre/peakPantheR/workflows/R-CMD-check-bioc/badge.svg)](https://github.com/phenomecentre/peakPantheR/actions)
-[![BioC
-status](http://www.bioconductor.org/shields/build/release/bioc/peakPantheR.svg)](https://bioconductor.org/checkResults/release/bioc-LATEST/peakPantheR)
+[![BioC status](http://www.bioconductor.org/shields/build/release/bioc/peakPantheR.svg)](https://bioconductor.org/checkResults/release/bioc-LATEST/peakPantheR)
 [![R-CMD-check-Bioc-devel](https://github.com/phenomecentre/peakPantheR/workflows/R-CMD-check-bioc-devel/badge.svg)](https://github.com/phenomecentre/peakPantheR/actions)
-[![BioC dev
-status](http://www.bioconductor.org/shields/build/devel/bioc/peakPantheR.svg)](https://bioconductor.org/checkResults/devel/bioc-LATEST/peakPantheR)
-[![Codecov test
+[![BioC dev status](http://www.bioconductor.org/shields/build/devel/bioc/peakPantheR.svg)](https://bioconductor.org/checkResults/devel/bioc-LATEST/peakPantheR)
 [![codecov](https://codecov.io/gh/phenomecentre/peakPantheR/branch/master/graph/badge.svg)](https://codecov.io/gh/phenomecentre/peakPantheR/branch/master)
 [![DOI](https://zenodo.org/badge/116680214.svg)](https://zenodo.org/badge/latestdoi/116680214)
 
